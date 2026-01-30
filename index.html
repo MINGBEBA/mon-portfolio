@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mingbeba Ouattara - Portfolio Personnel</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">MO</div>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link">À propos</a></li>
+                <li><a href="#passion" class="nav-link">Passions</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Héro -->
+    <section id="accueil" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Mingbeba</span>
+                    <span class="title-line">Ouattara</span>
+                </h1>
+                <p class="hero-subtitle">Chercheur en Entomologie | Passionné de Sciences & Technologie</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('apropos')">Découvrir mon parcours</button>
+                    <button class="btn btn-secondary" onclick="showMessage()">Dire Bonjour 👋</button>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <h2 class="section-title">À Propos de Moi</h2>
+            
+            <div class="about-grid">
+                <div class="about-card profile-card">
+                    <div class="card-inner">
+                        <div class="profile-image">
+                            <div class="image-placeholder">
+                                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="100" cy="100" r="95" fill="#00ff88" opacity="0.2"/>
+                                    <circle cx="100" cy="80" r="35" fill="#00ff88"/>
+                                    <path d="M 40 150 Q 100 120 160 150" fill="#00ff88"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Mingbeba Djakaridja Ouattara</h3>
+                        <p class="location">📍 Abidjan, Côte d'Ivoire</p>
+                    </div>
+                </div>
+
+                <div class="about-card info-card">
+                    <div class="card-inner">
+                        <h3>🎓 Formation</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="year">2025</span>
+                                <div>
+                                    <strong>Master en Entomologie Médicale et Vétérinaire</strong>
+                                    <p>Université Alassane OUATTARA</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="year">2023</span>
+                                <div>
+                                    <strong>Licence en Sciences Naturelles</strong>
+                                    <p>Université de Man</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="year">2020</span>
+                                <div>
+                                    <strong>BAC D</strong>
+                                    <p>Lycée Classique d'Abidjan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-card experience-card">
+                    <div class="card-inner">
+                        <h3>💼 Expérience</h3>
+                        <div class="experience-list">
+                            <div class="exp-item">
+                                <h4>Centre Suisse de Recherche Scientifique</h4>
+                                <p class="exp-period">2024 - 2025 | Stage</p>
+                                <ul>
+                                    <li>Échantillonnage d'œufs et larves de moustiques</li>
+                                    <li>Tests insecticides (bouteilles CDC)</li>
+                                    <li>Reproduction de moustiques</li>
+                                </ul>
+                            </div>
+                            <div class="exp-item">
+                                <h4>Centre d'Entomologie Médicale et Vétérinaire</h4>
+                                <p class="exp-period">2025 | Stage</p>
+                                <ul>
+                                    <li>Échantillons de gîtes larvaires</li>
+                                    <li>Enquête sociologique</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-card skills-card">
+                    <div class="card-inner">
+                        <h3>🛠️ Compétences</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-skill="QGIS">
+                                <div class="skill-icon">🗺️</div>
+                                <span>QGIS</span>
+                            </div>
+                            <div class="skill-item" data-skill="Python">
+                                <div class="skill-icon">🐍</div>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item" data-skill="Excel">
+                                <div class="skill-icon">📊</div>
+                                <span>Excel</span>
+                            </div>
+                            <div class="skill-item" data-skill="Recherche">
+                                <div class="skill-icon">🔬</div>
+                                <span>Recherche</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Passions -->
+    <section id="passion" class="passion">
+        <div class="container">
+            <h2 class="section-title">Mes Passions</h2>
+            <p class="section-subtitle">Ce qui me motive et m'inspire au quotidien</p>
+            
+            <div class="passion-grid">
+                <!-- Informatique -->
+                <div class="passion-card" data-passion="informatique">
+                    <div class="passion-icon">💻</div>
+                    <h3>Informatique</h3>
+                    <p>Le monde numérique me fascine. De la programmation Python pour l'analyse de données à l'utilisation de QGIS pour la cartographie, l'informatique est un outil puissant qui transforme ma recherche scientifique. J'aime créer des solutions technologiques pour résoudre des problèmes complexes.</p>
+                    <div class="passion-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Analyse de données</span>
+                        <span class="tag">QGIS</span>
+                    </div>
+                </div>
+
+                <!-- Biologie -->
+                <div class="passion-card" data-passion="biologie">
+                    <div class="passion-icon">🔬</div>
+                    <h3>Biologie</h3>
+                    <p>La biologie est au cœur de mon parcours académique et professionnel. L'étude des moustiques et des maladies vectorielles me permet de contribuer à la santé publique. Chaque découverte en entomologie médicale est une opportunité d'améliorer la vie des populations.</p>
+                    <div class="passion-tags">
+                        <span class="tag">Entomologie</span>
+                        <span class="tag">Recherche</span>
+                        <span class="tag">Santé publique</span>
+                    </div>
+                </div>
+
+                <!-- Football -->
+                <div class="passion-card" data-passion="football">
+                    <div class="passion-icon">⚽</div>
+                    <h3>Football</h3>
+                    <p>Le football représente pour moi l'esprit d'équipe, la stratégie et la persévérance. Que ce soit en regardant un match ou en jouant avec des amis, ce sport m'apprend la discipline et le dépassement de soi. C'est mon échappatoire après une longue journée de recherche.</p>
+                    <div class="passion-tags">
+                        <span class="tag">Sport</span>
+                        <span class="tag">Équipe</span>
+                        <span class="tag">Stratégie</span>
+                    </div>
+                </div>
+
+                <!-- Mécanique -->
+                <div class="passion-card" data-passion="mecanique">
+                    <div class="passion-icon">🔧</div>
+                    <h3>Mécanique</h3>
+                    <p>La mécanique nourrit ma curiosité pour comprendre comment les choses fonctionnent. Démonter, analyser et réparer des mécanismes me procure une satisfaction unique. Cette passion complète parfaitement mon approche scientifique et analytique de la recherche.</p>
+                    <div class="passion-tags">
+                        <span class="tag">Ingénierie</span>
+                        <span class="tag">Réparation</span>
+                        <span class="tag">Innovation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="passion-quote">
+                <blockquote>
+                    "La passion est l'énergie qui transforme les rêves en réalité."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Restons en Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:mingbeba.ouattara@gmail.com">mingbeba.ouattara@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3>Téléphone</h3>
+                    <a href="tel:+2250584051524">+225 05 84 05 15 24</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Localisation</h3>
+                    <p>Abidjan, Côte d'Ivoire</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mingbeba Ouattara. Créé avec passion 💚</p>
+            <div class="footer-links">
+                <a href="#accueil">Accueil</a>
+                <a href="#apropos">À propos</a>
+                <a href="#passion">Passions</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Message Modal -->
+    <div id="messageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>🎉 Merci de votre visite !</h2>
+            <p>Je suis ravi que vous découvriez mon parcours et mes passions.</p>
+            <p>N'hésitez pas à me contacter pour échanger !</p>
+            <button class="btn btn-primary" onclick="closeModal()">Fermer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
