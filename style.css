@@ -3,16 +3,16 @@
    ============================================ */
 :root {
     /* Couleurs principales */
-    --primary-color: rgb(191, 201, 209);
+    --primary-color: rgb(33, 94, 97);
     --primary-dark: #00cc6a;
-    --primary-light: #66ffbb;
+    --primary-light: rgb(254, 127, 45);
     --secondary-color: #0a0e27;
     --dark-bg: #050a1f;
     --darker-bg: #020510;
     --text-light: #ffffff;
     --text-gray: #a0a0a0;
     --accent-purple: #8b5cf6;
-    --accent-blue: #3b82f6;
+    --accent-blue: rgb(225, 217, 188);
     
     /* Typographie */
     --font-display: 'Noto Sans', sans-serif;
