@@ -3,16 +3,17 @@
    ============================================ */
 :root {
     /* Couleurs principales */
-    --primary-color: #F5F1E3;
-    --primary-dark: #3B392E;
-    --primary-light: #8b5cf6;
-    --secondary-color: #FCCEAE;
-    --dark-bg: #050a1f;
-    --darker-bg: #020510;
-    --text-light: #0D08OC;
-    --text-gray: #a0a0a0;
-    --accent-purple: #8b5cf6;
-    --accent-blue: #7DB6BC;
+    --color-beige-light: #F5F1E3;     /* Beige clair - Fond principal */
+    --color-sand: #E8D7B8;            /* Sable - Accents doux */
+    --color-orange: #FF8C42;          /* Orange vif - Couleur principale */
+    --color-dark: #1A1A1A;            /* Noir anthracite - Texte */
+    
+    /* Couleurs dérivées */
+    --color-orange-dark: #E67A2E;     /* Orange foncé pour hover */
+    --color-orange-light: #FFB380;    /* Orange clair pour arrière-plans */
+    --color-gray-light: #F9F7F3;      /* Gris très clair */
+    --color-gray-medium: #D4C4A8;     /* Gris moyen */
+    --color-gray-dark: #6B6B6B;  
     
     /* Typographie */
     --font-display: 'Noto Sans', sans-serif;
